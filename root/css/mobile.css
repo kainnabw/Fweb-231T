@@ -1,0 +1,45 @@
+.container_header {
+    width: 96%;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header h1 img {
+    max-width: 50%;
+}
+
+.carrinho {
+    display: none;
+}
+
+.menu-conteudo {
+    position: static;
+    text-align: center;
+}
+
+.menu-opcoes ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.busca,
+.menu-conteudo,
+.destaque img {
+    margin-right: 0;
+    width: auto;
+}
+
+.painel {
+    width: auto;
+}
+
+.painel li {
+    width: 30%;
+}
+
+.painel img {
+    width: auto;
+}
+
