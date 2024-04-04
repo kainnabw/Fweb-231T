@@ -1,0 +1,71 @@
+main{
+    height:100% ;
+    
+  
+
+}
+.principal{
+    display: flex;
+    height: 100%;
+
+}
+.direita{
+   
+    height: 100%;
+    width: 50%;
+    display: flex;
+    
+    
+}
+.esquerda{
+    background-color: #FE6347;
+    width: 50%;
+}
+.titulo_direita{
+    color: #FFF800;
+    text-align: center;
+    padding-top: 10%;
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 50px;
+}
+.texto_direita{
+    font-family:'Caveat', cursive; ;
+    font-size: 30px;
+}
+.imagem_grito{
+   padding-left: 2%;
+   padding-top: 2%;
+   height: 60%;
+   width: 60%;
+   object-fit: cover;
+}
+
+.titulo_informacao{
+    display: flex;
+    padding-left: 4%;
+    text-align: right;
+    font-family: cursive;
+  
+}
+.informacao{
+   padding-left: 3%;
+   width: 100%;
+   text-align: left;
+   font-family: 'Caveat' cursive;
+ 
+   
+}
+hr{
+    color: black solid;
+}
+footer{
+    height: 50px;
+    text-align: center;
+}
+.secdireita{
+    width: 100%;
+}
+.seccurto{
+   
+    width: 100%;
+}

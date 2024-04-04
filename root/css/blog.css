@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu{
+    background-color: #34675C;
+    width: 30%;
+    height: 70%;
+    border-radius: 5px;
+    text-align: center;
+}
+.menu img{
+    margin: 50px;
+}
+.menu a {
+    height: 30px;
+    width: 30px;
+}
