@@ -205,11 +205,6 @@ main{
     box-shadow: 0 0 5px #333; transition: box-shadow 0.7s;
     background-color: rgba(255,255,255,0.8); box-shadow: 0 0 5px #333; transition:0.7s;
     transform: scale(1.2);
-<<<<<<< HEAD
-    transform: scale(1.2) rotate(-15deg);
-=======
-    transform: scale(1.2) rotate(-5deg);
->>>>>>> 41b93ffc1d484fa0f331be8fd5f3523260cafec2
 }
 
 .painel h2 {
@@ -260,60 +255,11 @@ a:hover {
 
 
 
-<<<<<<< HEAD
-
-=======
-/* footer */
-/* footer{
-    height: 95px;
-    width: 100%;
-    background-color: pink;
-}
-.div_footer{
-    height: 95px;
-    width: 70%;
- 
-    padding: 60;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer img{
-    width: 100px;
-    height: 100px;
-    float: left;
-    margin-top: 25px;
-    margin-left: 20%;
-}
-.social a[href*="github.com"]{
-    background-image: url(imagem/github.png) ;
-    background-size: contain;
-}
-.social a[href*="linkedin.com"]{
-    background-image: url(imagem/linkedin.png) ;
-    background-size: contain;
-}
-.social{
- 
-    height: 100%;
-    width: 25%;
-    float: right;
-   
-} */
->>>>>>> 41b93ffc1d484fa0f331be8fd5f3523260cafec2
-
-
 
 footer{
     height: 95px;
     width: 100%;
-<<<<<<< HEAD
-    background-color: #00635A;
-=======
     background-color: pink;
->>>>>>> 41b93ffc1d484fa0f331be8fd5f3523260cafec2
 }
 
 .div_footer{
@@ -343,11 +289,7 @@ text-indent: -9999px;
 .social li {
     float: right;
     margin-top: 25px;   
-<<<<<<< HEAD
-    color: #00635A;
-=======
     color: pink;
->>>>>>> 41b93ffc1d484fa0f331be8fd5f3523260cafec2
 }
 .social a[href*="github.com"]{
     background-image: url(/root/imagem/github.png) ;
