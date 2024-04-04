@@ -259,7 +259,7 @@ a:hover {
 footer{
     height: 95px;
     width: 100%;
-    background-color: pink;
+    background-color:  #32A89C;
 }
 
 .div_footer{
@@ -289,7 +289,7 @@ text-indent: -9999px;
 .social li {
     float: right;
     margin-top: 25px;   
-    color: pink;
+    color:  #32A89C;
 }
 .social a[href*="github.com"]{
     background-image: url(/root/imagem/github.png) ;

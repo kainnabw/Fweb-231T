@@ -13,7 +13,7 @@ function validaBusca() {
     document.querySelector(".imagem_busca").style.background = "";
   };
   
-  var banners = ["/root/imagem/Charmander.webp", "/root/imagem/squirtle.webp","/root/imagem/bulba.webp"];
+  var banners = ["./root/imagem/Charmander.webp", "./root/imagem/squirtle.webp","./root/imagem/bulba.webp"];
   var bannerAtual = 0;
   function trocaBanner() {
     bannerAtual = (bannerAtual + 1) % 3;
