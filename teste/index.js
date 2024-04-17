@@ -42,7 +42,7 @@ function create() { // Função para criar elementos do jogo
     this.add.image(400, 300, 'sky');
 
     // Cria um grupo de plataformas estáticas
-    platforms = this.physics.add.static 
+    platforms = this.physics.add.staticGroup();
     platforms.create(400, 568, 'ground').setScale(2).refreshBody();
     platforms.create(1, 400, 'ground');
     platforms.create(560, 400, 'ground');
