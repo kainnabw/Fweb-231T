@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="controller">
+      <p>first name <input type="text" data-ng-model="firstname"></p>
+      <p>Last name <input type="text" data-ng-model="lastname"></p>
+    </div>
+
+    <script>
+        angular.module('myApp',[])
+                .controller('controller',['$scope', function ($scope){
+                    $scope.firstname = "Kainnã"
+                    $scope.lastname = "Borth Wantsin"
+                }])
+    </script>
+        
+</body>
+</html>
