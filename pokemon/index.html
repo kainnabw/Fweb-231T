@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./favicons/favicon-16x16.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Pokédex</title>
+</head>
+<body>
+  <main>
+    <img src="#" alt="pokemon" class="pokemon__image">
+    <h1 class="pokemon__data">
+      <span class="pokemon__number"></span>
+      <span class="pokemon__name"></span>
+    </h1>
+    <form class="form">
+      <input type="search" class="input__search" placeholder="ID ou nome do Pokémon" required>
+    </form>
+    <div class="buttons">
+      <button class="button btn-prev">Anterior &lt;</button>
+      <button class="button btn-next">Próximo &gt;</button>
+      <button id="button_info" class="button btn-next">info</button>
+    </div>
+    <!-- modal para as informações-->
+    <div id="Modal" class="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <img src="#" alt="pokemon" class="modal__image">
+        <h2 class="modal_name"></h2>
+        <p class="modal_id"></p>
+        <p class="modal_types"></p>
+        <p class="modal_height"></p>
+        <p class="modal_weight"></p>
+      </div>
+    </div>
+    <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+</html>
