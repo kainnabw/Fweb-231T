@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
 
+/* Reset básico e estilos gerais */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,7 @@ body {
   min-height: 100vh;
 }
 
+/* Estilos específicos para o conteúdo principal */
 main {
   display: inline-block;
   margin-top: 2%;
@@ -32,7 +34,7 @@ main {
   transform: translate(-63%, 20%);
   height: 18%;
 }
-/* css dos dados do pokemon */
+
 .pokemon__data {
   position: absolute;
   font-weight: 600;
@@ -63,7 +65,7 @@ main {
   font-weight: 600;
   color: #3a444d;
   font-size: clamp(8px, 5vw, 1rem);
-  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
 }
 
 .buttons {
@@ -93,35 +95,32 @@ main {
   font-size: 0.9rem;
 }
 
-
-/* Modal */
+/* Estilos para o Modal */
 .modal {
   display: none; /* Inicialmente oculto */
-  position: fixed; /* Posição fixa para cobrir a tela */
-  z-index: 1; /* Ajuste a pilha z para aparecer acima de outros elementos */
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; /* Cobrir toda a largura */
-  height: 100%; /* Cobrir toda a altura */
-  overflow: auto; /* Habilitar rolagem se necessário */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
 }
 
-/* Conteúdo do Modal */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* Centralizar verticalmente e ajustar margem */
+  margin: 15% auto; /* Centraliza verticalmente */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Largura do conteúdo do modal */
-  max-width: 600px; /* Largura máxima do conteúdo */
+  max-width: 600px;
   border-radius: 5px;
-  position: relative; /* Posição relativa para permitir posicionamento absoluto de elementos filhos */
+  position: relative;
 }
 
-/* Fechar ícone */
 .close {
-  position: absolute; /* Posição absoluta para o ícone de fechar */
+  position: absolute;
   right: 10px;
   top: 10px;
   font-size: 20px;
@@ -129,8 +128,5 @@ main {
 }
 
 .close:hover {
-  color: #aaa; /* Altera a cor ao passar o mouse */
+  color: #aaa;
 }
-
-/* Estilização adicional conforme necessário */
-

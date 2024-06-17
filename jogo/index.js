@@ -119,18 +119,18 @@ function update() { // Função para atualizar o estado do jogo
     }
 
     if (cursors.left.isDown) { // Verifica se a tecla de seta para a esquerda está pressionada
-        player.setVelocityX(-160); // Define a velocidade do jogador para a esquerda
+        player.setVelocityX(-160); 
         player.anims.play('left', true); // Inicia a animação de movimento para a esquerda
     } else if (cursors.right.isDown) { // Verifica se a tecla de seta para a direita está pressionada
-        player.setVelocityX(160); // Define a velocidade do jogador para a direita
+        player.setVelocityX(160); 
         player.anims.play('right', true); // Inicia a animação de movimento para a direita
     } else { // Se nenhuma tecla de movimento horizontal estiver pressionada
-        player.setVelocityX(0); // Define a velocidade do jogador como zero
+        player.setVelocityX(0); 
         player.anims.play('turn'); // Inicia a animação de parado
     }
 
-    if (cursors.up.isDown && player.body.touching.down) { // Verifica se a tecla de seta para cima está pressionada e o jogador está tocando o chão
-        player.setVelocityY(-330); // Aplica uma força para fazer o jogador pular
+    if (cursors.up.isDown && player.body.touching.down) { 
+        player.setVelocityY(-330); 
     }
 
     // Atualiza o tempo restante
@@ -138,7 +138,7 @@ function update() { // Função para atualizar o estado do jogo
     updateTimeText();
 }
 
-function collectStar(player, star) { // Função chamada quando o jogador coleta uma estrela
+function collectStar(player, star) { 
     star.disableBody(true, true); // Desativa e oculta a estrela
     score -= 10; // Diminui a pontuação
     scoreText.setText('erros no codigo : ' + score); // Atualiza o texto da pontuação

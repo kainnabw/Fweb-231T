@@ -1,3 +1,4 @@
+// Selecionando elementos do HTML
 const pokemonName = document.querySelector('.pokemon__name');
 const pokemonNumber = document.querySelector('.pokemon__number');
 const pokemonImage = document.querySelector('.pokemon__image');
@@ -16,8 +17,9 @@ const buttonNext = document.querySelector('.btn-next');
 const modalClose = document.querySelector('.close');
 const buttonInfo = document.getElementById('button_info');
 
-let searchPokemon = 1;
+let searchPokemon = 1; // Número do Pokémon atualmente exibido
 
+// Função para buscar dados de um Pokémon na API
 const fetchPokemon = async (pokemon) => {
   const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
 
@@ -27,6 +29,7 @@ const fetchPokemon = async (pokemon) => {
   }
 }
 
+// Função para renderizar informações básicas de um Pokémon na página principal
 const renderPokemon = async (pokemon) => {
   pokemonName.innerHTML = 'Loading...';
   pokemonNumber.innerHTML = '';
@@ -37,7 +40,7 @@ const renderPokemon = async (pokemon) => {
     pokemonImage.style.display = 'block';
     pokemonName.innerHTML = data.name;
     pokemonNumber.innerHTML = data.id;
-    pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+    pokemonImage.src = data.sprites.versions['generation-v']['black-white'].animated.front_default;
     input.value = '';
     searchPokemon = data.id;
   } else {
@@ -47,6 +50,7 @@ const renderPokemon = async (pokemon) => {
   }
 }
 
+// Função para atualizar o modal com informações detalhadas de um Pokémon
 const updateModal = async (pokemon) => {
   const data = await fetchPokemon(pokemon);
   modalName.innerHTML = data.name;
@@ -54,14 +58,16 @@ const updateModal = async (pokemon) => {
   modalTypes.innerHTML = `Types: ${data.types.map(type => type.type.name).join(', ')}`;
   modalHeight.innerHTML = `Height: ${data.height / 10} m`;
   modalWeight.innerHTML = `Weight: ${data.weight / 10} kg`;
-  modalImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+  modalImage.src = data.sprites.versions['generation-v']['black-white'].animated.front_default;
 }
 
+// Event listener para o formulário de busca de Pokémon
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   renderPokemon(input.value.toLowerCase());
 });
 
+// Event listener para o botão de Pokémon anterior
 buttonPrev.addEventListener('click', () => {
   if (searchPokemon > 1) {
     searchPokemon -= 1;
@@ -69,24 +75,29 @@ buttonPrev.addEventListener('click', () => {
   }
 });
 
+// Event listener para o botão de Pokémon próximo
 buttonNext.addEventListener('click', () => {
   searchPokemon += 1;
   renderPokemon(searchPokemon);
 });
 
+// Event listener para o botão de informações do Pokémon (abrir modal)
 buttonInfo.addEventListener('click', () => {
   modal.style.display = 'block';
   updateModal(searchPokemon);
 });
 
+// Event listener para fechar o modal ao clicar no botão de fechar
 modalClose.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 
+// Event listener para fechar o modal ao clicar fora dele
 window.addEventListener('click', (event) => {
   if (event.target === modal) {
     modal.style.display = 'none';
   }
 });
 
+// Renderiza o primeiro Pokémon ao carregar a página
 renderPokemon(searchPokemon);
